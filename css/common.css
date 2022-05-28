@@ -34,7 +34,8 @@ p {
   margin-bottom: 0;
 }
 
-img {
+img,
+svg {
   display: block;
 }
 .page {
@@ -60,11 +61,10 @@ img {
 }
 
 .button {
-  border: 1px solid transparent;
-
-  min-width: 73px;
-  max-width: 200px;
-  padding: 6px 22px;
+  border: 1px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 /* header */
@@ -96,16 +96,17 @@ img {
 .site-nav {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 22px 0;
 }
 
-.nav-item:not(:last-child) {
+.nav-item:not(:last-child),
+.auth-item:not(:last-child) {
   margin-right: 40px;
 }
 
 .site-nav .link {
   display: block;
-  padding: 32px 0;
+  padding: 10px 0;
 
   color: var(--main-text-color);
   letter-spacing: 0.02em;
@@ -126,13 +127,15 @@ img {
 .auth-nav {
   display: flex;
   margin: 0;
-  padding: 0;
   margin-left: auto;
+  padding: 22px 0;
 }
-
+.auth-item {
+}
 .auth-nav .link {
-  display: block;
-  padding: 32px 0;
+  display: flex;
+  padding: 10px 0;
+
   color: var(--low-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -142,8 +145,10 @@ img {
 }
 
 .nav-under-icon {
-  fill: var(--low-text-color);
+  margin-top: 2px;
   margin-right: 10px;
+
+  fill: var(--low-text-color);
 }
 .auth-nav .link:hover .nav-under-icon,
 .auth-nav .link:focus .nav-under-icon {
@@ -157,8 +162,10 @@ img {
 /* hero */
 
 .hero {
-  background-color: var(--hero-footer-color);
+  width: 1600px;
+  margin: 0 auto;
   padding: 200px 0;
+  background-color: var(--hero-footer-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-img.jpg);
 }
@@ -184,14 +191,10 @@ img {
 
   letter-spacing: 0.06em;
   padding: 10px 32px;
-  border-radius: 4px;
   color: var(--accent-color);
-  border: 1px;
   background-color: var(--accent-bgc);
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.9;
-  cursor: cell;
 }
 
 .hero-button:hover {
@@ -202,7 +205,7 @@ img {
 .advantages.section {
   padding-bottom: 0;
 }
-.list.container {
+.advanteges-list {
   display: flex;
 }
 .advanteges-li {
@@ -211,7 +214,16 @@ img {
 .advanteges-li:not(:first-child) {
   margin-left: 30px;
 }
+.advanteges-icon {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
 
+  background: #f5f4fa;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
 .advantages-title {
   font-size: 14px;
   line-height: 1.14;
@@ -445,14 +457,9 @@ img {
 }
 .job-option {
   padding: 6px 22px;
-  border-radius: 4px;
-
   color: var(--main-text-color);
   background-color: var(--team-bgc);
-  border: 1px;
-  cursor: cell;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.6;
 }
 .job-option:hover,
