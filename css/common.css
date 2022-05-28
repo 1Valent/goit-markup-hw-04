@@ -130,10 +130,11 @@ svg {
   margin-left: auto;
   padding: 22px 0;
 }
-.auth-item {
-}
+
 .auth-nav .link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 0;
 
   color: var(--low-text-color);
@@ -145,10 +146,9 @@ svg {
 }
 
 .nav-under-icon {
-  margin-top: 2px;
+  display: block;
   margin-right: 10px;
-
-  fill: var(--low-text-color);
+  fill: currentColor;
 }
 .auth-nav .link:hover .nav-under-icon,
 .auth-nav .link:focus .nav-under-icon {
@@ -169,10 +169,7 @@ svg {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-img.jpg);
 }
-.container-section.hero-section {
-  letter-spacing: 0.06em;
-  text-align: center;
-}
+
 .hero-title {
   width: 696px;
   margin: 0 auto;
