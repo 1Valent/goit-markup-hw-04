@@ -209,17 +209,27 @@ svg {
 .advanteges-list {
   display: flex;
 }
-/* .advanteges-li {
-  width: 270px;
-} */
-.advanteges-li:not(:first-child) {
+
+.advanteges-content:not(:first-child) {
   margin-left: 30px;
 }
+
+.antenna-content::before {
+  content: '';
+  height: 120px;
+  display: block;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--team-bgc);
+  background-image: url('../images/icons/antenna.svg');
+}
+
 .advanteges-icon-box {
   display: flex;
   width: 270px;
   height: 120px;
-  background: #f5f4fa;
+  background: var(--team-bgc);
   border-radius: 4px;
   align-items: center;
   justify-content: center;
