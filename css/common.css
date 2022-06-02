@@ -133,7 +133,6 @@ svg {
 
 .auth-nav .link {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 10px 0;
 
@@ -210,22 +209,27 @@ svg {
 .advanteges-list {
   display: flex;
 }
-.advanteges-li {
+/* .advanteges-li {
   width: 270px;
-}
+} */
 .advanteges-li:not(:first-child) {
   margin-left: 30px;
 }
-.advanteges-icon {
+.advanteges-icon-box {
+  display: flex;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
-
   background: #f5f4fa;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
 }
+.advanteges-text-content {
+  width: 270px;
+  height: 130px;
+  padding-top: 30px;
+}
+
 .advantages-title {
   font-size: 14px;
   line-height: 1.14;
@@ -485,7 +489,7 @@ svg {
   margin-bottom: 30px;
 }
 .job-full-icon:hover,
-.job-full-icon:focus {
+.job-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -496,6 +500,7 @@ svg {
   margin-bottom: 0;
 }
 .job-list-link {
+  display: block;
   text-decoration: none;
 }
 .job-full-undertext {
