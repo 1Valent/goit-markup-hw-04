@@ -213,7 +213,7 @@ svg {
 .advanteges-content:not(:first-child) {
   margin-left: 30px;
 }
-
+/* 
 .antenna-content::before {
   content: '';
   height: 120px;
@@ -223,7 +223,7 @@ svg {
   background-position: center;
   background-color: var(--team-bgc);
   background-image: url('../images/icons/antenna.svg');
-}
+} */
 
 .advanteges-icon-box {
   display: flex;
